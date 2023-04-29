@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../jquery-ui-1.13.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../index.css">
+    <style>
+        
+        
+
+    </style>
+    <title>Check Malaria</title>
+</head>
+<body>
+    <div id="container">
+                <!-- Facts box -->
+                <div id="dialog-el">
+                    <div id="fact-el">
+                        
+                    </div>
+                    <button onclick="closeDialog()"  type="button" id="close-dialog-el">OK</button> 
+                </div>  
+
+        <div id="start-review-el"> 
+            <br>
+                <svg width="100%" height="40px">
+               <text x="50%" y="80%" text-anchor="middle"  >
+                 Review in Progress
+               </text>
+               </svg>
+            <div id="review-el">
+                <div id="question-box-el">
+                    <img id="image-el" src="../images/malaria_life_cycle.jpg" width="45%" alt="">
+                    <div id="question-el" >
+                        
+                    </div>
+                </div>
+                <div id="options-ctn">
+                    <div id="option-one-el">YES</div>
+                    <div id="option-two-el">NO</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- // Result display box -->
+    <div id="result-el">
+        <div id="confirmation-el">
+            <div class="text-primary ms-3 mt-2" id="result-output">Do you want to proceed with record</div>
+            <a href="../index.html"><button class="btn btn-outline-danger" type="button" id="el-confirmation">OK</button></a>
+        </div>
+    </div>
+
+    <script src="../mpm_functions.js"></script>
+    <script src="../index.js"></script>
+</body>
+</html>

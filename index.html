@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jquery-ui-1.13.1.custom/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" href="style.scss"> -->
+    <script src="jquery-ui-1.13.1.custom/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.13.1.custom/jquery-ui.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="index.css">
+    <title>Malaria Predictive Technology</title>
+</head>
+<body>
+
+    <div id="container">
+
+        <video id="intro-video-el" onended="videoEnded()" autoplay  muted >
+            <source src="Videos/introVid.mp4" type="video/mp4" >
+        </video>
+
+            <!-- Dialog Boxes  -->
+                <!-- Hint Dialog  -->
+                <div id="dialog-el">
+                        <div id="fact-el">Do you want to proceed with record.</div>
+                        <button onclick="closeDialog()"  type="button" id="close-dialog-el">OK</button> 
+                </div>
+
+
+
+            <!-- Landing Page -->
+            <div id="landing-page-el">
+                
+                <p id="title-el">
+                    Malaria Predictive <br> <strong>Model</strong>
+                </p>
+    
+                <div class="button-ctn">
+                    <a id="start-el" href="includes/checkMalaria.html"><button type="button">Check Malaria</button></a>
+                    <a href="includes/aboutMalaria.html"><button type="button">About Malaria</button></a>
+                    <a href="includes/diagnosisOfMalaria.html"><button type="button">Diagnosis of Malaria</button></a>
+                    <a href="includes/projectInfo.html"><button type="button">Project Info</button></a>
+                </div>
+            </div>
+             
+            <!-- Start Review -->
+            
+
+            <!-- <button class="btn btn-outline-secondary">Hello</button> -->
+            <!-- <footer>
+                &copy 2022
+            </footer> -->
+        </div>
+        
+        
+    <script src="js/bootstrap.min.js"></script>
+    <script src="mpm_functions.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
